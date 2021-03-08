@@ -48,4 +48,5 @@ RUN cd /usr/local/bin && \
   unzip terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
   rm terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 
-ENTRYPOINT ["/bin/bash"]
+# run with: docker run -it <image hash>
+ENTRYPOINT ["/bin/bash"] 
